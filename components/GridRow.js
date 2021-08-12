@@ -1,4 +1,5 @@
 import React from 'react'
+import { View, StyleSheet } from 'react-native'
 import Cell from './Cell'
 
 const GridRow = ({player, gameWon, firstCell, board, playSquare}) => {
@@ -17,12 +18,19 @@ const GridRow = ({player, gameWon, firstCell, board, playSquare}) => {
   )
 
   return(
-    <tr>
+    <View style={styles.row}>
       {cell(firstCell)}
       {cell(firstCell + 1)}
       {cell(firstCell + 2)}
-    </tr>
+    </View>
   )
 }
+
+const styles = StyleSheet.create({
+  row: {
+      flexDirection: 'row',
+        backgroundColor: "grey"
+    }
+});
 
 export default GridRow;

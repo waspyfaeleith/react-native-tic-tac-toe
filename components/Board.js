@@ -1,8 +1,10 @@
 import React from 'react'
-import { View, Text, StyleSheet } from 'react-native'
+import { View, Text, StyleSheet, Dimensions } from 'react-native'
 import Cell from './Cell'
 import Row from './GridRow'
 
+  
+const DeviceWidth = Dimensions.get('window').width;
 const Board = ({ board, player, endGame, changePlayer, won, update, switchPlayer }) => {
 
   const checkRowsForWinner = () => {
@@ -66,18 +68,55 @@ const Board = ({ board, player, endGame, changePlayer, won, update, switchPlayer
       />
   )
 
-  return (
-    <View>
-      <Text>Tic Tac Toe</Text>
-      <table id="ticTacToeGrid">
-        <tbody>
+    return (
+        <View style={styles.grid}>
+            <Text>Tic Tac Toe</Text>
+        <View>
           {row(0)}
           {row(3)}
           {row(6)}
-        </tbody>
-      </table>
+        </View>
+
+            {/* <View style={styles.grid}>
+                 
+        <View style={styles.row}>
+       
+      <View>
+        <View style={styles.cell} />
+        <View style={styles.cell} />
+        <View style={styles.cell} />
+     </View>
+      <View>
+        <View style={styles.cell} />
+        <View style={styles.cell} />
+        <View style={styles.cell} />
+      </View>
+      <View>
+         <View style={styles.cell} />
+        <View style={styles.cell} />
+        <View style={styles.cell} />
+      </View>    
     </View>
+            </View> */}
+            </View>
   )
 }
+
+const styles = StyleSheet.create({
+    grid: {
+        flex: 1,
+        justifyContent: 'center',
+    alignItems: 'center',
+    },
+    // row: {
+    //   flexDirection: 'row',
+    //     backgroundColor: "grey"
+    // },
+    // cell: {
+    //     width: DeviceWidth * 0.2,
+    //     height: DeviceWidth * 0.2,
+    //     backgroundColor: 'blue'
+    // } 
+});
 
 export default Board;
