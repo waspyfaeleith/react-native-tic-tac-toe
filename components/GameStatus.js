@@ -1,4 +1,5 @@
 import React from 'react'
+import { View, Text, StyleSheet } from 'react-native';
 
 const GameStatus = ({winner, turns, won, currentPlayer }) => {
   let currentState;
@@ -11,9 +12,9 @@ const GameStatus = ({winner, turns, won, currentPlayer }) => {
     currentState = currentPlayer + " to go.";
   }
   return(
-    <div>
-      <h2>{currentState}</h2>
-    </div>
+    <View>
+      <Text>{currentState}</Text>
+    </View>
   )
 }
 

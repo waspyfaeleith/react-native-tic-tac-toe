@@ -71,11 +71,10 @@ const Board = ({ board, player, endGame, changePlayer, won, update, switchPlayer
     return (
         <View style={styles.grid}>
             <Text>Tic Tac Toe</Text>
-        <View>
-          {row(0)}
-          {row(3)}
-          {row(6)}
-        </View>
+                {row(0)}
+                {row(3)}
+                {row(6)}
+    
 
             {/* <View style={styles.grid}>
                  
@@ -106,7 +105,7 @@ const styles = StyleSheet.create({
     grid: {
         flex: 1,
         justifyContent: 'center',
-    alignItems: 'center',
+        alignItems: 'center',
     },
     // row: {
     //   flexDirection: 'row',

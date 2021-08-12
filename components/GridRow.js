@@ -29,7 +29,7 @@ const GridRow = ({player, gameWon, firstCell, board, playSquare}) => {
 const styles = StyleSheet.create({
   row: {
       flexDirection: 'row',
-        backgroundColor: "grey"
+      //backgroundColor: "grey"
     }
 });
 
