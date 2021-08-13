@@ -19,29 +19,27 @@ const Cell = ({playSquare, contents, id, gameWon, player }) => {
   
   return (
     <View style={styles.cell}>
-      <Text>{ contents }</Text>
+      <Text style={styles.cellText}>{ contents }</Text>
     </View>
   )
 
 }
 
 const styles = StyleSheet.create({
-  // cell: {
-  //   height: 80,
-  //   width: 80,
-  //   //background: "transparent",
-  //   //border: "none"
-  // }
-
   cell: {
-        width: DeviceWidth * 0.1,
-        height: DeviceWidth * 0.1,
-        backgroundColor: 'grey',
+        width: DeviceWidth * 0.3,
+        height: DeviceWidth * 0.3,
+        backgroundColor: 'black',
         justifyContent: 'center',
         alignItems: 'center',
-        //padding: 3
+        padding: 5,
+        borderWidth: 3,
+        borderColor: "white"
+    },
+    cellText: {
+      fontSize: 100,
+      color: "white",
     }
-
 });
 
 export default Cell;
