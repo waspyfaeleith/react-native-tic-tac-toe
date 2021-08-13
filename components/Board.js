@@ -70,54 +70,18 @@ const Board = ({ board, player, endGame, changePlayer, won, update, switchPlayer
 
     return (
         <View style={styles.grid}>
-            <Text>Tic Tac Toe</Text>
                 {row(0)}
                 {row(3)}
                 {row(6)}
-    
-
-            {/* <View style={styles.grid}>
-                 
-        <View style={styles.row}>
-       
-      <View>
-        <View style={styles.cell} />
-        <View style={styles.cell} />
-        <View style={styles.cell} />
-     </View>
-      <View>
-        <View style={styles.cell} />
-        <View style={styles.cell} />
-        <View style={styles.cell} />
-      </View>
-      <View>
-         <View style={styles.cell} />
-        <View style={styles.cell} />
-        <View style={styles.cell} />
-      </View>    
-    </View>
-            </View> */}
             </View>
   )
 }
 
 const styles = StyleSheet.create({
     grid: {
-        flex: 1,
         justifyContent: 'center',
-        alignItems: 'center',
-        //padding: 250,
-        //backgroundColor: 'blue'
+        alignItems: 'center'
     },
-    // row: {
-    //   flexDirection: 'row',
-    //     backgroundColor: "grey"
-    // },
-    // cell: {
-    //     width: DeviceWidth * 0.2,
-    //     height: DeviceWidth * 0.2,
-    //     backgroundColor: 'blue'
-    // } 
 });
 
 export default Board;

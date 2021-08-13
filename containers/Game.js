@@ -81,9 +81,12 @@ const styles = StyleSheet.create({
   },
   header: {
     //minHeight: 50
+    alignItems: 'center',
+    padding: 3
   },
   headerText: {
-    fontSize: 20
+    fontSize: 50,
+    color: 'white'
   }
 });
 
