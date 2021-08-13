@@ -47,7 +47,11 @@ const Game = () =>  {
   }
 
   return (
-      <View>
+      <View style={styles.container}>
+        <View style={styles.header}>
+          <Text>Tic Tac Toe</Text>
+        </View>
+                   
         <Board
           player={player}
           changePlayer={switchPlayer}
@@ -69,5 +73,14 @@ const Game = () =>  {
       </View>
       )
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1
+  },
+  header: {
+    //minHeight: 50
+  }
+});
 
 export default Game;

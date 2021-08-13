@@ -12,7 +12,7 @@ const Cell = ({playSquare, contents, id, gameWon, player }) => {
   if (contents === "" && gameWon === false) {
      return(
        <View style={styles.cell}>
-         <Button style={styles.cell} onPress={selectSquare} title={contents}/>
+         <Button onPress={selectSquare} title={contents}/>
        </View>
     )
   }
@@ -34,10 +34,12 @@ const styles = StyleSheet.create({
   // }
 
   cell: {
-        width: DeviceWidth * 0.2,
-        height: DeviceWidth * 0.2,
-        //backgroundColor: 'blue',
-        padding: 3
+        width: DeviceWidth * 0.1,
+        height: DeviceWidth * 0.1,
+        backgroundColor: 'grey',
+        justifyContent: 'center',
+        alignItems: 'center',
+        //padding: 3
     }
 
 });
