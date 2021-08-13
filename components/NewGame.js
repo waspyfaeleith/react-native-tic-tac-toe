@@ -9,7 +9,7 @@ const NewGame = ({startNewGame, won, turns}) => {
 
   if (won === true || (turns === 9)) {
     return(
-      <View>
+      <View style={styles.newGame}>
         <Button style={styles.newGameButton} onPress={handleButtonClick} title={"New Game"}/>
       </View>
     )
@@ -20,16 +20,13 @@ const NewGame = ({startNewGame, won, turns}) => {
 
 
 const styles = StyleSheet.create({
+  newGame: {
+    padding: 4,
+    alignContent: 'center'
+  },
   newGameButton: {
     margin: 0,
-    //display: "block",
-    //backg "#4CAF50", /* Green */
-    //border: "none",
     color: "white",
-    //padding: "15px 32px",
-    //textAlign: "center",
-    //textDecoration: "none",
-    //fontSize: "16px"
   }
 });
 

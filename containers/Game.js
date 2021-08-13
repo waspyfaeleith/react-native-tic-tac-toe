@@ -80,7 +80,7 @@ const styles = StyleSheet.create({
     backgroundColor: "blue"
   },
   header: {
-    //minHeight: 50
+    minHeight: 50,
     alignItems: 'center',
     padding: 3
   },

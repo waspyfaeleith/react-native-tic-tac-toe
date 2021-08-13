@@ -12,10 +12,23 @@ const GameStatus = ({winner, turns, won, currentPlayer }) => {
     currentState = currentPlayer + " to go.";
   }
   return(
-    <View>
-      <Text>{currentState}</Text>
+    <View style = {styles.gameStatus}>
+      <Text style={styles.statusText}>{currentState}</Text>
     </View>
   )
 }
+
+const styles = StyleSheet.create({
+  gameStatus: {
+    justifyContent: 'center',
+    alignContent: 'center'
+  },
+  statusText: {
+    color: 'white',
+    fontSize: 20
+
+  }
+});
+
 
 export default GameStatus;
