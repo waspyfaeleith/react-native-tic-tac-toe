@@ -29,7 +29,6 @@ const styles = StyleSheet.create({
   cell: {
         width: DeviceWidth * 0.3,
         height: DeviceWidth * 0.3,
-        backgroundColor: 'black',
         justifyContent: 'center',
         alignItems: 'center',
         padding: 5,

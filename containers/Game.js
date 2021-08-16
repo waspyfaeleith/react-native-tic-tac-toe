@@ -76,13 +76,12 @@ const Game = () =>  {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    backgroundColor: "blue"
+    flex: 1
   },
   header: {
     minHeight: 50,
     alignItems: 'center',
-    padding: 3
+    padding: 3,
   },
   headerText: {
     fontSize: 50,

@@ -1,7 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import Game from './containers/Game';
-import { StyleSheet, Text, View } from 'react-native';
+import { View, StyleSheet, ImageBackground } from 'react-native';
 import * as Font from "expo-font";
 import { useFonts } from "@use-expo/font";
 
@@ -11,18 +11,26 @@ const customFonts = {
 
 export default function App() {
 
-  const [isLoaded] = useFonts(customFonts);
-  return (
-    <Game />
+    const [isLoaded] = useFonts(customFonts);
+    
+    return (
+        <View style={styles.container}>
+            <ImageBackground source={require("./assets/images/chalkboard.jpg")} style={styles.image}>
+                <Game />
+            </ImageBackground>
+        </View>
     );
 }
 
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        //backgroundColor: '#fff',
-        alignItems: 'center',
-        justifyContent: 'center',
-        fontFamily: 'Eraser'
+        backgroundColor: 'grey',
+        fontFamily: 'Eraser',
+        color: 'white'
+    },
+    image: {
+        flex: 1,
+        resizeMode: 'stretch',
     },
 });
