@@ -8,8 +8,17 @@ const GridRow = ({player, gameWon, firstCell, board, playSquare}) => {
     playSquare(cell)
   }
 
+  const getRowStyle = () => {
+    if (firstCell === 3) {
+      return styles.centerRow;
+    } else {
+      return styles.row;
+    }
+  }
+
   const cell = (index) => (
     <Cell
+      style={styles.centreColumn}
       id={index}
       player={player}
       playSquare={selectSquare}
@@ -18,7 +27,7 @@ const GridRow = ({player, gameWon, firstCell, board, playSquare}) => {
   )
 
   return(
-    <View style={styles.row}>
+    <View style={getRowStyle()}>
       {cell(firstCell)}
       {cell(firstCell + 1)}
       {cell(firstCell + 2)}
@@ -28,9 +37,16 @@ const GridRow = ({player, gameWon, firstCell, board, playSquare}) => {
 
 const styles = StyleSheet.create({
   row: {
-      flexDirection: 'row',
-      //backgroundColor: "grey"
-    }
+    flexDirection: 'row'
+  },
+  centerRow: {
+    flexDirection: 'row',
+    borderTopWidth: 6,
+    borderTopColor: 'white',
+    borderBottomWidth: 6,
+    borderBottomColor: 'white'
+  }
+  
 });
 
 export default GridRow;
