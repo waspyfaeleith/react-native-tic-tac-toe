@@ -25,7 +25,9 @@ const styles = StyleSheet.create({
   },
   statusText: {
     color: 'white',
-    fontSize: 50   
+    fontSize: 50,
+    textAlign: 'center',
+    fontFamily: 'Eraser'
   }
 });
 

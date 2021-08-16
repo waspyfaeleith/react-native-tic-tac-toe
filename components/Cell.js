@@ -12,7 +12,7 @@ const Cell = ({playSquare, contents, id, gameWon, player }) => {
   if (contents === "" && gameWon === false) {
      return(
        <View style={styles.cell}>
-         <Button onPress={selectSquare} title={contents}/>
+         <Button style={styles.button} onPress={selectSquare} title={contents}/>
        </View>
     )
   }
@@ -38,7 +38,10 @@ const styles = StyleSheet.create({
     cellText: {
       fontSize: 100,
       color:'white',
-      fontFamily: 'Eraser'
+      fontFamily: 'Eraser',
+    },
+    button: {
+      flex: 1
     }
 });
 

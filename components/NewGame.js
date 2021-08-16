@@ -26,8 +26,12 @@ const styles = StyleSheet.create({
   },
   newGameButton: {
     margin: 0,
-    color: "white",
-    fontFamily: "Eraser"
+    color: 'white',
+    padding: 20,
+    fontSize: 50,
+    width: 200,
+    height: 40,
+    textAlign: 'center'
   }
 });
 
