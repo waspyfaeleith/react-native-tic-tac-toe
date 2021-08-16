@@ -27,6 +27,7 @@ const styles = StyleSheet.create({
   newGameButton: {
     margin: 0,
     color: "white",
+    fontFamily: "Eraser"
   }
 });
 

@@ -1,4 +1,4 @@
-import React, { useState }from 'react';
+import React, { useState } from 'react';
 import { View, Text, StyleSheet, Button, Dimensions } from 'react-native';
 
 const DeviceWidth = Dimensions.get('window').width;
@@ -34,11 +34,12 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         padding: 5,
         borderWidth: 3,
-        borderColor: "white"
+        borderColor: 'white'
     },
     cellText: {
       fontSize: 100,
-      color: "white",
+      color:'white',
+      fontFamily: 'Eraser'
     }
 });
 

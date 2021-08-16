@@ -25,8 +25,7 @@ const styles = StyleSheet.create({
   },
   statusText: {
     color: 'white',
-    fontSize: 20
-
+    fontSize: 20   
   }
 });
 
