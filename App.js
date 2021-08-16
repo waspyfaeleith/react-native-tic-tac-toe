@@ -27,7 +27,7 @@ const styles = StyleSheet.create({
         flex: 1,
         backgroundColor: 'grey',
         fontFamily: 'Eraser',
-        color: 'white'
+        color: 'white',
     },
     image: {
         flex: 1,

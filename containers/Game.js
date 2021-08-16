@@ -49,7 +49,7 @@ const Game = () =>  {
   return (
       <View style={styles.container}>
         <View style={styles.header}>
-          <Text styles={styles.headerText}>Tic Tac Toe</Text>
+          <Text style={styles.headerText}>Tic-Tac-Toe</Text>
         </View>
                    
         <Board
@@ -76,16 +76,18 @@ const Game = () =>  {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1
+    flex: 1,
+    paddingTop: 100
   },
   header: {
     minHeight: 50,
     alignItems: 'center',
-    padding: 3,
+    padding: 10,
   },
   headerText: {
-    fontSize: 50,
-    color: 'white'
+    fontSize: 60,
+    color: 'white',
+    fontFamily: 'Eraser'
   }
 });
 
